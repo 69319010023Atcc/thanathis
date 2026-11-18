@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050914;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 35px 15px;
+}
+
+.register-container {
+    max-width: 520px;
+    margin: auto;
+    padding: 35px;
+    background: #0c1728;
+    border: 1px solid #203c55;
+    border-radius: 14px;
+}
+
+.back {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    margin: 35px 0;
+}
+
+header h1 {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+header h1 span {
+    color: #00d9ff;
+}
+
+header p {
+    color: #91a0b5;
+    margin-top: 12px;
+}
+
+header p:first-of-type {
+    color: #00d9ff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin: 10px 0 25px;
+}
+
+header h2 {
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 13px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form > label {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 14px;
+    background: #071120;
+    border: 1px solid #29415b;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #00d9ff;
+}
+
+input::placeholder {
+    color: #62748a;
+}
+
+/* ปุ่มเลือกประเภทบัญชี */
+
+.role-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.role {
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+    background: #101d30;
+    color: #91a0b5;
+    border: 1px solid #29415b;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    z-index: 3;
+    pointer-events: auto;
+    transition: 0.2s;
+}
+
+.role:hover {
+    border-color: #00d9ff;
+    color: white;
+}
+
+.role.active {
+    color: #00d9ff;
+    border: 2px solid #00d9ff;
+    background: #102b40;
+}
+
+#roleMessage {
+    color: #00d9ff;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.terms input {
+    accent-color: #00d9ff;
+}
+
+.submit-btn {
+    padding: 16px;
+    background: #00d9ff;
+    color: #050914;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: white;
+}
+
+#message {
+    font-size: 13px;
+    text-align: center;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #91a0b5;
+    font-size: 13px;
+}
+
+.login-link a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .register-container {
+        padding: 22px;
+    }
+}

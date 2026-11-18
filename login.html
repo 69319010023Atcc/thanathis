@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUVEX | Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main class="login-container">
+        <a href="auth.html" class="back">← กลับไปเลือกบัญชี</a>
+
+        <header>
+            <a href="index.html" class="logo">EDU<span>VEX</span></a>
+            <p class="eyebrow">ACADEMIC RPG PLATFORM</p>
+            <h1>ยินดีต้อนรับกลับ</h1>
+            <p class="description">เข้าสู่ระบบเพื่อเดินทางต่อในโลกแห่งการเรียนรู้</p>
+        </header>
+
+        <form id="loginForm">
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" id="password" name="password" placeholder="กรอกรหัสผ่าน" autocomplete="current-password" required>
+
+            <button type="submit" class="submit-btn">เข้าสู่ระบบ <span>→</span></button>
+        </form>
+
+        <p class="register-link">ยังไม่มีบัญชี? <a href="register.html">ลงทะเบียน</a></p>
+    </main>
+</body>
+</html>
