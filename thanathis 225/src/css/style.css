@@ -1,0 +1,42 @@
+/* นำเข้าฟอนต์ภาษาไทย Prompt จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+/* บังคับใช้ฟอนต์ Prompt ทั้งหน้าเว็บ */
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+/* อนิเมชั่นสำหรับ Toast Notification (เด้งเข้าจากทางขวา) */
+.toast-enter {
+    animation: slideInRight 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.toast-exit {
+    animation: slideOutRight 0.3s ease-in forwards;
+}
+
+@keyframes slideInRight {
+    0% { transform: translateX(120%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutRight {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(120%); opacity: 0; }
+}
+
+/* อนิเมชั่น Background Blob ให้ขยับช้าๆ เพิ่มมิติให้ UI */
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
